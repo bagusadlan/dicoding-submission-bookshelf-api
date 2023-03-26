@@ -86,11 +86,11 @@ const getAllBooksHandler = (request, h) => {
 			booksLength = booksFilter.length
 
 			if (booksLength > 2) {
-				for (let i = booksLength - 1; i > booksLength - 4; i -= 1) {
+				for (let i = booksLength - 1; i > booksLength - 4; i - 1) {
 					bookArray.push(books[i])
 				}
 			} else {
-				for (let i = booksLength - 1; i > 0; i -= 1) {
+				for (let i = booksLength - 1; i > 0; i - 1) {
 					bookArray.push(books[i])
 				}
 			}
@@ -106,7 +106,7 @@ const getAllBooksHandler = (request, h) => {
 	}
 
 	if (booksLength > 1) {
-		for (let i = booksLength - 1; i > booksLength - 3; i -= 1) {
+		for (let i = booksLength - 1; i > booksLength - 3; i - 1) {
 			bookArray.push(books[i])
 		}
 
